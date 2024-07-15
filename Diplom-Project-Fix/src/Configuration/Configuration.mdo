@@ -1252,11 +1252,10 @@
   <reports>Report.УниверсальныйОтчет</reports>
   <reports>Report.ВКМ_ДашбордОбслуживание</reports>
   <reports>Report.ВКМ_ВыработкаСпециалистов</reports>
-  <reports>Report.ВКМ_АнализВыставленныхАктов</reports>
   <reports>Report.ВКМ_ПерерасчетыПроцентОтРабот</reports>
   <reports>Report.ВКМ_РасчётыССотрудниками</reports>
   <reports>Report.ВКМ_РасходЗапланированныхОтпусков</reports>
-  <reports>Report.ВКМ_АнализВыставленныхАктов1</reports>
+  <reports>Report.ВКМ_АнализВыставленныхАктов</reports>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
   <dataProcessors>DataProcessor.ВводКонтактнойИнформации</dataProcessors>
   <dataProcessors>DataProcessor.ГрупповоеИзменениеРеквизитов</dataProcessors>

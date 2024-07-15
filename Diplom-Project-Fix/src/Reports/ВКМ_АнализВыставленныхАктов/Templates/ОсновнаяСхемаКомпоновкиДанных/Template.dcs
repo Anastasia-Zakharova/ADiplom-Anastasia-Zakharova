@@ -31,22 +31,42 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаКОплатеПоРаботамПериод</dataPath>
-			<field>СуммаКОплатеПоРаботамПериод</field>
+			<dataPath>СуммаКОплатеРасходАктыТекущийМесяц</dataPath>
+			<field>СуммаКОплатеРасходАктыТекущийМесяц</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма к оплате по работам период</v8:content>
+					<v8:content>Сумма к оплате расход акты текущий месяц</v8:content>
 				</v8:item>
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>СуммаКОплатеПоРаботамТекущийМесяц</dataPath>
-			<field>СуммаКОплатеПоРаботамТекущийМесяц</field>
+			<dataPath>СуммаКОплатеПриходОбслуживанияПериод</dataPath>
+			<field>СуммаКОплатеПриходОбслуживанияПериод</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сумма к оплате по работам текущий месяц</v8:content>
+					<v8:content>Сумма к оплате приход обслуживания период</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаКОплатеРасходАктыПериод</dataPath>
+			<field>СуммаКОплатеРасходАктыПериод</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма к оплате расход акты период</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаКОплатеПриходОбслуживаниеТекущийМесяц</dataPath>
+			<field>СуммаКОплатеПриходОбслуживаниеТекущийМесяц</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма к оплате приход обслуживание текущий месяц</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -54,8 +74,10 @@
 		<query>ВЫБРАТЬ
 	ВКМ_ВыполненныеКлиентуРаботыОборотыПериод.Клиент КАК Клиент,
 	ВКМ_ВыполненныеКлиентуРаботыОборотыПериод.Договор КАК Договор,
-	ВКМ_ВыполненныеКлиентуРаботыОборотыПериод.СуммаКОплатеОборот КАК СуммаКОплатеПоРаботамПериод,
-	NULL КАК СуммаКОплатеПоРаботамТекущийМесяц,
+	ВКМ_ВыполненныеКлиентуРаботыОборотыПериод.СуммаКОплатеПриход КАК СуммаКОплатеПриходОбслуживанияПериод,
+	ВКМ_ВыполненныеКлиентуРаботыОборотыПериод.СуммаКОплатеРасход КАК СуммаКОплатеРасходАктыПериод,
+	NULL КАК СуммаКОплатеПриходОбслуживаниеТекущийМесяц,
+	NULL КАК СуммаКОплатеРасходАктыТекущийМесяц,
 	NULL КАК СуммаАбонентскойПлаты
 ИЗ
 	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты(&amp;НачалоПериода, &amp;КонецПериода, , ) КАК ВКМ_ВыполненныеКлиентуРаботыОборотыПериод
@@ -66,7 +88,9 @@
 	ВКМ_ВыполненныеКлиентуРаботыОборотыТекущийМясяц.Клиент,
 	ВКМ_ВыполненныеКлиентуРаботыОборотыТекущийМясяц.Договор,
 	NULL,
-	ВКМ_ВыполненныеКлиентуРаботыОборотыТекущийМясяц.СуммаКОплатеОборот,
+	NULL,
+	ВКМ_ВыполненныеКлиентуРаботыОборотыТекущийМясяц.СуммаКОплатеПриход,
+	ВКМ_ВыполненныеКлиентуРаботыОборотыТекущийМясяц.СуммаКОплатеРасход,
 	ВЫБОР
 		КОГДА ВКМ_ВыполненныеКлиентуРаботыОборотыТекущийМясяц.Договор.ВКМ_ДатаОкончанияДействияДоговора &gt;= &amp;КонецТекущегоМесяца
 			ТОГДА ВКМ_ВыполненныеКлиентуРаботыОборотыТекущийМясяц.Договор.ВКМ_СуммаАбонентскойПлаты
@@ -76,16 +100,24 @@
 	РегистрНакопления.ВКМ_ВыполненныеКлиентуРаботы.Обороты({(&amp;НачалоТекущегоМесяца)}, {(&amp;КонецТекущегоМесяца)}, Авто, ) КАК ВКМ_ВыполненныеКлиентуРаботыОборотыТекущийМясяц</query>
 	</dataSet>
 	<totalField>
-		<dataPath>СуммаКОплатеПоРаботамПериод</dataPath>
-		<expression>Сумма(СуммаКОплатеПоРаботамПериод)</expression>
-	</totalField>
-	<totalField>
-		<dataPath>СуммаКОплатеПоРаботамТекущийМесяц</dataPath>
-		<expression>Сумма(СуммаКОплатеПоРаботамТекущийМесяц)</expression>
-	</totalField>
-	<totalField>
 		<dataPath>СуммаАбонентскойПлаты</dataPath>
 		<expression>Сумма(СуммаАбонентскойПлаты)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКОплатеПриходОбслуживанияПериод</dataPath>
+		<expression>Сумма(СуммаКОплатеПриходОбслуживанияПериод)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКОплатеРасходАктыПериод</dataPath>
+		<expression>Сумма(СуммаКОплатеРасходАктыПериод)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКОплатеПриходОбслуживаниеТекущийМесяц</dataPath>
+		<expression>Сумма(СуммаКОплатеПриходОбслуживаниеТекущийМесяц)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаКОплатеРасходАктыТекущийМесяц</dataPath>
+		<expression>Сумма(СуммаКОплатеРасходАктыТекущийМесяц)</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -366,7 +398,7 @@
 						<dcsat:value xsi:type="v8:LocalStringType">
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content> </v8:content>
+								<v8:content> (Обслуживания) </v8:content>
 							</v8:item>
 						</dcsat:value>
 					</dcsat:item>
@@ -385,11 +417,76 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">26.875</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">20.625</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">26.875</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">20.625</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма по </v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Номенклатура</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> с </v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">НачалоПериода</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> по </v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">КонецПериода</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> (Акты) </v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">19.5</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">19.5</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -420,7 +517,7 @@
 						<dcsat:value xsi:type="v8:LocalStringType">
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content> года</v8:content>
+								<v8:content> года (Обслуживания)</v8:content>
 							</v8:item>
 						</dcsat:value>
 					</dcsat:item>
@@ -439,11 +536,65 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">28.375</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">20.25</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">28.375</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">20.25</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Сумма по </v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">Номенклатура</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> за </v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ТекущийМесяц</dcsat:value>
+					</dcsat:item>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content> года (Акты)</v8:content>
+							</v8:item>
+						</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" faceName="Arial" height="9" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">19.75</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">19.75</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -493,11 +644,11 @@
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">28.125</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">19</dcscor:value>
 						</dcscor:item>
 						<dcscor:item>
 							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-							<dcscor:value xsi:type="xs:decimal">28.125</dcscor:value>
+							<dcscor:value xsi:type="xs:decimal">19</dcscor:value>
 						</dcscor:item>
 					</dcsat:appearance>
 				</dcsat:tableCell>
@@ -545,10 +696,16 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаКОплатеПоРаботамПериод</dcsset:field>
+					<dcsset:field>СуммаКОплатеПриходОбслуживанияПериод</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>СуммаКОплатеПоРаботамТекущийМесяц</dcsset:field>
+					<dcsset:field>СуммаКОплатеРасходАктыПериод</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаКОплатеПриходОбслуживаниеТекущийМесяц</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаКОплатеРасходАктыТекущийМесяц</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>СуммаАбонентскойПлаты</dcsset:field>

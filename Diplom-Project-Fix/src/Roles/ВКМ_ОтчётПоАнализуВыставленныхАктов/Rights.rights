@@ -5656,17 +5656,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Report.ВКМ_АнализВыставленныхАктов</name>
-		<right>
-			<name>Use</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.ВидДляСписка</name>
 		<right>
 			<name>View</name>

@@ -47,7 +47,6 @@
   <content>DataProcessor.ВКМ_МассовоеСозданиеАктов</content>
   <content>CommonPicture.ВКМ_КомандаЗаполнить</content>
   <content>CommonPicture.ВКМ_QRКод</content>
-  <content>Report.ВКМ_АнализВыставленныхАктов</content>
   <content>Report.ВКМ_ВыработкаСпециалистов</content>
   <content>Report.ВКМ_ДашбордОбслуживание</content>
   <content>Role.ВКМ_ДобавлениеИзменениеДокументовРеализации</content>
@@ -58,7 +57,7 @@
   <content>Role.ВКМ_ОтчётПоВыработкеСпециалистов</content>
   <content>Role.ВКМ_ОтчётПоАнализуВыставленныхАктов</content>
   <content>CommonModule.ВКМ_СозданиеАктовРеализации</content>
-  <content>Report.ВКМ_АнализВыставленныхАктов1</content>
+  <content>Report.ВКМ_АнализВыставленныхАктов</content>
   <subsystems>ВКМ_Обслуживание</subsystems>
   <subsystems>ВКМ_Реализация</subsystems>
   <subsystems>ВКМ_Телеграмм</subsystems>

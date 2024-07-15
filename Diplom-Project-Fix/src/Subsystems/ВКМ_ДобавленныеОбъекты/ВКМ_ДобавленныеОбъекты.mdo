@@ -66,7 +66,6 @@
   <content>AccumulationRegister.ВКМ_ОтпускаСотрудников</content>
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <content>Report.ВКМ_РасчётыССотрудниками</content>
-  <content>Report.ВКМ_АнализВыставленныхАктов</content>
   <content>Report.ВКМ_ВыработкаСпециалистов</content>
   <content>Report.ВКМ_ДашбордОбслуживание</content>
   <content>Role.ВКМ_ДобавлениеИзменениеДокументовРеализации</content>

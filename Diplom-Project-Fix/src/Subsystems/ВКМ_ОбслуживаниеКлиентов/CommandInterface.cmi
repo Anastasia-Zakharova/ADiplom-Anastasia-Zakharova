@@ -83,7 +83,6 @@
     <orderFragments>
       <group>ActionsPanelReports</group>
       <commands>Report.ВКМ_ВыработкаСпециалистов.StandardCommand.Open</commands>
-      <commands>Report.ВКМ_АнализВыставленныхАктов.StandardCommand.Open</commands>
     </orderFragments>
     <orderFragments>
       <group>ActionsPanelTools</group>
