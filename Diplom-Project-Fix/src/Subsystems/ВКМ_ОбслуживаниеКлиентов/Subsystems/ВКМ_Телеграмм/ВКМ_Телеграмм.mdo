@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b3c618b-67d2-4e57-a329-fa05082cedf8">
+  <name>ВКМ_Телеграмм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Телеграмм</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
+  <content>Constant.ВКМ_ТокенУправленияТелеграмБотом</content>
+  <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
+  <content>Catalog.ВКМ_УчетныеЗаписиТелеграм</content>
+  <content>CommonModule.ВКМ_СлужебныеТелеграм</content>
+  <content>CommonModule.ВКМ_РегламентныеТелеграм</content>
+  <content>Constant.ВКМ_УникальныйИдентификаторОбновления</content>
+  <content>DataProcessor.ВКМ_КонсольТелеграм</content>
+  <content>CommonForm.ВКМ_ФормаКонстантТелеграм</content>
+  <content>Enum.ВКМ_ТипыСообщенийТелеграм</content>
+  <content>InformationRegister.ВКМ_ЛогиТелеграм</content>
+  <content>CommonModule.ВКМ_МетодыТелеграм</content>
+  <content>CommonModule.ВКМ_ОтправкаЗапросаТелеграм</content>
+  <content>Constant.ВКМ_КонтактыКомпанииТелеграм</content>
+  <content>Constant.ВКМ_НазваниеКомпанииТелеграм</content>
+  <content>Constant.ВКМ_ШиротаМестаКомпанииТелеграм</content>
+  <content>Constant.ВКМ_ДолготаМестаКомпанииТелеграм</content>
+  <content>Constant.ВКМ_АдресКомпанииТелеграм</content>
+  <content>CommonTemplate.ВКМ_РеквизитыКомпанииТелеграм</content>
+  <content>CommonTemplate.ВКМ_ОбразецЛистаУчетаТелеграм</content>
+  <content>ScheduledJob.ВКМ_ОтправкаСообщенийТелеграм</content>
+  <content>CommonPicture.ВКМ_ФотоИнструкцияТелеграм</content>
+  <content>CommonTemplate.ВКМ_АудиоИнструкцияТелеграм</content>
+  <parentSubsystem>Subsystem.ВКМ_ОбслуживаниеКлиентов</parentSubsystem>
+</mdclass:Subsystem>

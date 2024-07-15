@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b3bdd5d-d08e-45ba-b829-afc3cafd64d3">
+  <producedTypes>
+    <selectionType typeId="b68cc494-bb85-4525-b40d-aca5db416009" valueTypeId="643801f4-b887-451e-8b52-32d4a6f71692"/>
+    <listType typeId="010ae2f2-bb6b-4e30-ba8f-1919b3cfa050" valueTypeId="ead02a80-7926-4478-ab94-9eb86654a160"/>
+    <managerType typeId="811fbff5-8737-4a1e-a50a-13303685b917" valueTypeId="8cc0ba9c-503c-4815-b1f9-05354c30a782"/>
+    <recordSetType typeId="be703573-604b-4a8e-a8a1-533c637a1186" valueTypeId="01b4a940-ec5a-47c3-adb1-250f60edc3a2"/>
+    <recordKeyType typeId="2d31105f-9814-4c11-bad9-7c970b1a53fe" valueTypeId="727b69d9-45c9-4f00-b93c-23cbeba63dfb"/>
+    <recordType typeId="6a3ff0c7-edcb-49c0-9fde-ff611845694c" valueTypeId="bfdaa458-b9f0-4255-a5e5-0e45cba66006"/>
+    <recalcsType typeId="7bb496c1-fb33-4a16-bbb9-140e2bf70153" valueTypeId="96558867-d507-4bde-9853-6d63dfd29a3c"/>
+  </producedTypes>
+  <name>ВКМ_ДополнительныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнительные начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>CalculationRegister.ВКМ_ДополнительныеНачисления.Form.ФормаСписка</defaultListForm>
+  <periodicity>Month</periodicity>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="47a882cc-3780-4804-b9bd-8ee0b2af80b5">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="b553d9c8-1583-40fa-8978-a7d45a41ec14">
+    <name>ЧасовРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часов работы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="24a1b7ce-9eef-403f-bf9e-b3c07a1c4b0b">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="9cd31112-67c7-427e-9722-e30e73cf117f">
+    <name>Категория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_КатегорииСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <recalculations uuid="b0516c5f-0174-44f4-b019-c1a469e46a74">
+    <producedTypes>
+      <recordType typeId="305cf551-6ee3-4cea-ba53-53e13f066b96" valueTypeId="f1a0aa1a-f41a-42b1-b343-fad258cb4861"/>
+      <managerType typeId="d47913ec-751a-444b-bafe-5ddccaededb0" valueTypeId="903fa67f-edc0-47a9-8f24-cba760fc49d4"/>
+      <recordSetType typeId="e2cec171-9b18-4f2e-b1ee-605b59ab9c04" valueTypeId="808c0eb7-b41b-41ff-bc3d-8a0299360060"/>
+    </producedTypes>
+    <name>ПерерасчетПроцентОтРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перерасчет процент от работ</value>
+    </synonym>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <dimensions uuid="64620775-bd60-447d-a86b-7ab992652ef0">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <registerDimension>CalculationRegister.ВКМ_ДополнительныеНачисления.Dimension.Сотрудник</registerDimension>
+      <leadingRegisterData>CalculationRegister.ВКМ_ОсновныеНачисления.Dimension.Сотрудник</leadingRegisterData>
+      <leadingRegisterData>CalculationRegister.ВКМ_ДополнительныеНачисления.Dimension.Сотрудник</leadingRegisterData>
+      <leadingRegisterData>CalculationRegister.ВКМ_Удержания.Dimension.Сотрудник</leadingRegisterData>
+    </dimensions>
+  </recalculations>
+  <forms uuid="dbc8a826-1f87-4fcd-a114-6315b35ac537">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:CalculationRegister>

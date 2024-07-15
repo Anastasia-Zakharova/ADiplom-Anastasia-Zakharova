@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9eff2b5-0a20-4bfe-992c-0a8e57119dfe">
+  <producedTypes>
+    <managerType typeId="5a50f5d3-a95e-4f24-be15-456ab04bd9df" valueTypeId="bf58ada3-0f98-4b0a-9a85-03a3822a6c8c"/>
+    <valueManagerType typeId="f4001e55-0fec-4a2a-a76e-607faf3bd9e0" valueTypeId="04448b58-363a-4180-b94c-51fe4bde0c69"/>
+    <valueKeyType typeId="a04575f6-4af2-44b4-9e11-d5c9ffb24029" valueTypeId="b5ce01a8-0c8a-4014-a511-668e0c5a9534"/>
+  </producedTypes>
+  <name>ВКМ_УникальныйИдентификаторОбновления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уникальный идентификатор обновления (update_id) (заполняется автоматически)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>30</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

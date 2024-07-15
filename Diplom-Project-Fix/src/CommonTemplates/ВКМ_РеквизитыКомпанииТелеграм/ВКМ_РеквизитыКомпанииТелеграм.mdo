@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76c009c0-f803-417d-8f90-bb9379b85a6d">
+  <name>ВКМ_РеквизитыКомпанииТелеграм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реквизиты компании телеграм</value>
+  </synonym>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>

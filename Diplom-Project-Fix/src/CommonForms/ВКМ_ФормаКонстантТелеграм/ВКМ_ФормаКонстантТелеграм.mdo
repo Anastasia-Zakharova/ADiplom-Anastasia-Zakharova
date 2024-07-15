@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b522c43-06d9-4ee4-a596-b2d0e2bad68f">
+  <name>ВКМ_ФормаКонстантТелеграм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Константы телеграм</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:CommonForm>

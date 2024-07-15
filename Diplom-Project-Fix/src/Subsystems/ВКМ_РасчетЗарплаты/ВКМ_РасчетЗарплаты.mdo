@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5159176e-c93f-4c18-a722-7a31395159ec">
+  <name>ВКМ_РасчетЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет зарплаты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ИконкаНетология</picture>
+  </picture>
+  <content>Catalog.ВКМ_КатегорииСотрудников</content>
+  <content>Catalog.ВКМ_Сотрудники</content>
+  <content>Catalog.ВКМ_ГрафикиРаботы</content>
+  <content>InformationRegister.ВКМ_ГрафикиРаботы</content>
+  <content>DataProcessor.ВКМ_ЗаполнениеГрафика</content>
+  <content>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</content>
+  <content>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</content>
+  <content>ChartOfCalculationTypes.ВКМ_Удержания</content>
+  <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
+  <content>CalculationRegister.ВКМ_ДополнительныеНачисления</content>
+  <content>CalculationRegister.ВКМ_Удержания</content>
+  <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
+  <content>Document.ВКМ_НачисленияЗарплаты</content>
+  <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
+  <content>Report.ВКМ_ПерерасчетыПроцентОтРабот</content>
+  <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
+  <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
+  <content>Document.ВКМ_ВыплатаЗарплаты</content>
+  <content>Document.ВКМ_ГрафикОтпусков</content>
+  <content>CommonPicture.ВКМ_КартинкаДиаграмма</content>
+  <content>CommonPicture.ВКМ_КартинкаСотрудник</content>
+  <content>CommonPicture.ВКМ_КартинкаОтпуск</content>
+  <content>AccumulationRegister.ВКМ_ОтпускаСотрудников</content>
+  <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
+  <content>Report.ВКМ_РасчётыССотрудниками</content>
+  <content>Role.ВКМ_РасчетЗарплаты</content>
+  <content>Role.ВКМ_ВыплатаЗарплаты</content>
+  <content>Role.ВКМ_ПланированиеОтпусков</content>
+  <content>Role.ВКМ_ОтчётПоЗарплатеИОтпускам</content>
+  <subsystems>ВКМ_Начисления</subsystems>
+  <subsystems>ВКМ_Выплаты</subsystems>
+  <subsystems>ВКМ_Отпуска</subsystems>
+</mdclass:Subsystem>

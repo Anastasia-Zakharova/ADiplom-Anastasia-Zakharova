@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bea102cc-59f4-439c-9baf-55e2a3b65143">
+  <producedTypes>
+    <objectType typeId="88c24c66-045a-414f-91a0-76a6475c6ff3" valueTypeId="55f72a90-f661-4c08-bfdd-95ca51903da3"/>
+    <refType typeId="13c3d8b4-ce02-4b70-b927-efb8ad2396ae" valueTypeId="b98eff2a-0c0d-4862-bee2-708bfa54292f"/>
+    <selectionType typeId="3c5dcc26-d942-4c24-80d7-32eb191d1fbd" valueTypeId="444fea39-3836-4cd8-97f9-6019f48b87ec"/>
+    <listType typeId="dcdd0621-f647-4bc8-be51-5cb7db1a5f6d" valueTypeId="69a580a7-f7ce-46b9-81f2-1e6a998854a0"/>
+    <managerType typeId="965879db-f695-40d1-a41e-25c7b4516797" valueTypeId="2af1ea95-0b7a-4f69-ba3f-9c0cf6a5e80b"/>
+  </producedTypes>
+  <name>ВКМ_ГрафикиРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Графики работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВКМ_ГрафикиРаботы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>График работы</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>График работы</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Графики работы</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Графики работы</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f952e169-2bfe-42e9-bce7-fa303a49e5f9">
+      <name>Пятидневка</name>
+      <description>Пятидневка</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="340a07bc-3af2-4dd0-9b1a-3b659bb2140d">
+      <name>Шестидневка</name>
+      <description>Шестидневка</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВКМ_ГрафикиРаботы.Form.ФормаЭлемента</defaultObjectForm>
+  <forms uuid="cbaffc3e-6f53-4616-8bc0-13ff5e0f8c22">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

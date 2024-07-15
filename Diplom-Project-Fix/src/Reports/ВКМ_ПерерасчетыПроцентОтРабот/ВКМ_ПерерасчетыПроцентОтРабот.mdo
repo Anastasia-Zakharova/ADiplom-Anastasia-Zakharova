@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fbc7276b-49fb-4b47-888f-02cce0cab1b5">
+  <producedTypes>
+    <objectType typeId="c7cd4524-651a-4e00-8f3c-2628c30f85da" valueTypeId="1b46aaf1-73e6-4b50-a6a2-9c6443fa9716"/>
+    <managerType typeId="0be416de-c4da-4a30-a86f-1fb6b3cbf965" valueTypeId="58e90c76-b62e-4268-9d9a-e03251b9f322"/>
+  </producedTypes>
+  <name>ВКМ_ПерерасчетыПроцентОтРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перерасчеты (процент от работ)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ВКМ_ПерерасчетыПроцентОтРабот.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="de98e443-5bf6-4c01-874f-ad42034a50ab">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

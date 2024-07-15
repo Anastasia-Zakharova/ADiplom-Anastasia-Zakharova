@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a21d5679-ea44-4111-83cb-cdd686f657f4">
+  <name>ВКМ_ФотоИнструкцияТелеграм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Фото инструкция телеграм</value>
+  </synonym>
+</mdclass:CommonPicture>

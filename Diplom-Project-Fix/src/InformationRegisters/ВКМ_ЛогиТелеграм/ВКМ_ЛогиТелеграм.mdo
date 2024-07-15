@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3fdf59f3-900a-4c80-b3df-0ae2a720d595">
+  <producedTypes>
+    <selectionType typeId="792fa3cd-1fa5-4301-b902-25679c0281eb" valueTypeId="8a1f2b73-29d8-4e2e-adf0-b4a632c9309d"/>
+    <listType typeId="2a5b93a1-f3c6-4767-95ce-fd3f5f488f2f" valueTypeId="c15da1d1-5193-44e6-8473-4e41c57913ea"/>
+    <managerType typeId="0fad04ee-fb2d-4320-8b67-e39a2c317205" valueTypeId="162aea7f-d5f1-470c-8234-24bcc97ec7fe"/>
+    <recordSetType typeId="a4b3a52f-5591-4738-9f31-443116a99116" valueTypeId="f7cc644b-e394-4b25-b26a-7b3ce351e677"/>
+    <recordKeyType typeId="af2254b7-4832-4855-bec4-6640f5540180" valueTypeId="8aa43832-a7c7-4070-af1a-b611b9a12c96"/>
+    <recordType typeId="008180aa-0867-440a-870c-53ec3db0e4e4" valueTypeId="7bf98db6-5336-444f-a1cd-21691915ebaa"/>
+    <recordManagerType typeId="35db7367-f7a8-4742-a88b-088357b682b0" valueTypeId="5a836e25-3c8c-4c1f-b8dd-664c471c7b74"/>
+  </producedTypes>
+  <name>ВКМ_ЛогиТелеграм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Логи Телеграм (для разработчиков)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВКМ_ЛогиТелеграм.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ВКМ_ЛогиТелеграм.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Лог Телеграм (для разработчиков)</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Лог Телеграм (для разработчиков)</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Логи Телеграм (для разработчиков)</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Логи Телеграм (для разработчиков)</value>
+  </extendedListPresentation>
+  <resources uuid="a230a649-40f0-4f6d-8ee6-410cca813dd6">
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="f2cf278c-aab1-40fa-a147-b37fdac469b7">
+    <name>ТипСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип сообщения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВКМ_ТипыСообщенийТелеграм</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="115d6481-07fa-424f-a07a-0294fdc2855b">
+    <name>Контекст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контекст</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b3dfda33-fc85-4acf-b8c8-6bfbf2782ec8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5247daae-e4f5-4bd1-945d-a4f5fcd49198">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

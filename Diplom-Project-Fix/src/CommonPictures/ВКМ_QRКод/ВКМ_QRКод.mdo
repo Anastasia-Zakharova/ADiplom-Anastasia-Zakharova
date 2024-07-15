@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c0a2c6ae-82f6-43fd-b28a-783a8ff34992">
+  <name>ВКМ_QRКод</name>
+  <synonym>
+    <key>ru</key>
+    <value>QR код</value>
+  </synonym>
+  <transparentPixel>
+    <x>547</x>
+    <y>324</y>
+  </transparentPixel>
+</mdclass:CommonPicture>

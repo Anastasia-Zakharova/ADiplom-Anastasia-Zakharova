@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ccd9d428-1c41-409d-aa7a-1d433c1016c8">
+  <name>ВКМ_ДашбордОбслуживание</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дашборд обслуживание</value>
+  </synonym>
+</mdclass:Role>

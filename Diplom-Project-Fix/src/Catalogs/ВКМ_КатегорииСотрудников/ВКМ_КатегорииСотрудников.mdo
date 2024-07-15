@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6aa305a1-1089-4a89-99bb-fa08743800e9">
+  <producedTypes>
+    <objectType typeId="499a24d3-285c-4c33-b934-5de9c72c6739" valueTypeId="9dd5eba9-eef0-4944-8836-df78863a98ae"/>
+    <refType typeId="f838b9bf-d96f-4db3-811c-db35396c28e4" valueTypeId="f8aa85f0-e313-4390-af06-06f786fb5e72"/>
+    <selectionType typeId="f34ed908-29de-47ee-ad00-c7de3197563a" valueTypeId="e5768ccf-aecf-41fd-a5bd-c5f400d62890"/>
+    <listType typeId="b9fcc8a4-aa10-4531-831a-d4ae7bf25626" valueTypeId="b2e6a9b2-444d-4fb6-8047-f6b22acc0032"/>
+    <managerType typeId="8230452e-a748-4f31-a58e-6c8d5978e74e" valueTypeId="5e4db560-289d-46ad-a266-577cfda7bc13"/>
+  </producedTypes>
+  <name>ВКМ_КатегорииСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВКМ_КатегорииСотрудников.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Категория сотрудника</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Категория сотрудника</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Категории сотрудников</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Категории сотрудников</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="2cba91a2-6696-4c50-b862-cf1dc9fd0832">
+      <name>Специалисты</name>
+      <description>Специалисты</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВКМ_КатегорииСотрудников.Form.ФормаЭлемента</defaultObjectForm>
+  <forms uuid="e54d4ecf-43f1-4565-bf44-72a3c2d6dce7">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

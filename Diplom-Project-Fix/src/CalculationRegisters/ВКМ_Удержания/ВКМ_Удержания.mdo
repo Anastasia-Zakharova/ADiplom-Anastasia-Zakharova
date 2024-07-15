@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a04ac7f-cc14-49eb-83d1-2cfa1abcd6b4">
+  <producedTypes>
+    <selectionType typeId="0d7e104d-d412-4712-82f0-f29ccbe0040f" valueTypeId="2a02bb42-76a3-406b-8105-97c5fea35a5d"/>
+    <listType typeId="eee900e3-e063-4b91-97c0-3babd3d940b1" valueTypeId="7c7f7c44-bac4-4275-9723-3e08449f7d22"/>
+    <managerType typeId="91904c28-1f4f-4795-b964-4ebf738caeed" valueTypeId="aa7c1ea2-2503-40e8-b9ba-ad06ad8518fa"/>
+    <recordSetType typeId="a76d27e7-56c3-4212-a00b-dbcccf049182" valueTypeId="2766a844-8460-4b36-a562-7f5895c43fe5"/>
+    <recordKeyType typeId="94d51ef9-dc66-487d-8d62-aa95060cc0fb" valueTypeId="d0b9e36c-1e76-4545-b87d-f189799a09e3"/>
+    <recordType typeId="be775701-fb84-4c21-bedb-3790c6ffc8c9" valueTypeId="20073718-13b4-4bc5-9084-4327deab45d6"/>
+    <recalcsType typeId="af97a823-1d86-4ea4-a690-759d979579fd" valueTypeId="137ad452-9324-4ee6-8f5d-443fc5935ae8"/>
+  </producedTypes>
+  <name>ВКМ_Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>CalculationRegister.ВКМ_Удержания.Form.ФормаСписка</defaultListForm>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartOfCalculationTypes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7b0e0a88-5d60-4ffa-a606-3086f775b849">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="c29828e9-2b2e-4172-b38b-f2f335dd0718">
+    <name>ПроцентНДФЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент НДФЛ</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3d14fd93-0675-4205-a8a7-e733c875b18e">
+    <name>СовокупныйДоход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Совокупный доход</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="b61f184a-16a4-4439-bfb4-6a0c4774deab">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="2819eef0-fddc-441f-a7e5-05c0e4820f9c">
+    <name>Категория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_КатегорииСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <forms uuid="af6a1445-21f6-4221-9f07-fdd4ce20f15b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:CalculationRegister>

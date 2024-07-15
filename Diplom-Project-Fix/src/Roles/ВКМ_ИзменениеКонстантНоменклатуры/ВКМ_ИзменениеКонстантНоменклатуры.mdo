@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7c550cb-40cd-41e4-8f8c-f1a8926fa6cc">
+  <name>ВКМ_ИзменениеКонстантНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение констант номенклатуры</value>
+  </synonym>
+</mdclass:Role>

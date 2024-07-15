@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bbe47d22-d9bd-4665-800e-30d3d285661f">
+  <producedTypes>
+    <managerType typeId="56c8ca97-53da-4459-bb25-4fe209bbb73c" valueTypeId="a461c9d8-79a3-4ef7-aab1-559014b231b8"/>
+    <valueManagerType typeId="98546508-8309-483c-bc50-0ea7d59a257e" valueTypeId="f052452c-019b-4de5-808b-348be7d07efb"/>
+    <valueKeyType typeId="fce667d5-7f94-4267-ae8e-7fa2b03b7503" valueTypeId="773e3f75-b864-435a-92a1-66a50d83fe83"/>
+  </producedTypes>
+  <name>ВКМ_ШиротаМестаКомпанииТелеграм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Широта местоположения компании</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>8</precision>
+      <scale>6</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

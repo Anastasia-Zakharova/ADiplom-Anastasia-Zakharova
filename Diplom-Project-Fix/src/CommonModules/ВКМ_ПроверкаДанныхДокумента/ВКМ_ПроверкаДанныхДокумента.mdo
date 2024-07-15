@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8ede502-ad8b-4c8f-a517-94d56c008334">
+  <name>ВКМ_ПроверкаДанныхДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка данных документа</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

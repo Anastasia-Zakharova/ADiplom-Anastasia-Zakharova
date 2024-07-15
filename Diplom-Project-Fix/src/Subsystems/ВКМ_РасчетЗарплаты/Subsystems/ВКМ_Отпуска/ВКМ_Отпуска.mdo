@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3e05457-510a-4901-8c7c-3a2694a9fb06">
+  <name>ВКМ_Отпуска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отпуска</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.ВКМ_ГрафикОтпусков</content>
+  <content>AccumulationRegister.ВКМ_ОтпускаСотрудников</content>
+  <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
+  <parentSubsystem>Subsystem.ВКМ_РасчетЗарплаты</parentSubsystem>
+</mdclass:Subsystem>

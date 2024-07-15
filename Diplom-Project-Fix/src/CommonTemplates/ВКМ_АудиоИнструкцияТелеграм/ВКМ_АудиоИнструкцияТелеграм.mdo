@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonTemplate xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="efea1634-29a2-410a-bd31-484bc2b0b4ac">
+  <name>ВКМ_АудиоИнструкцияТелеграм</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аудио инструкция телеграм</value>
+  </synonym>
+  <templateType>BinaryData</templateType>
+</mdclass:CommonTemplate>
